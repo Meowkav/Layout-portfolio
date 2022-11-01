@@ -442,14 +442,11 @@ button {
     margin-right: 10px;
 }
 
-.portfolio__works {
-    display: flex;
-    flex-wrap: wrap;
-}
 
 .portfolio__works_item {
     display: inline-block;
     width: calc(48% - 72px);
+    flex-wrap: wrap;
 
     margin-top: 60px;
     margin-right: 36px;
@@ -780,8 +777,7 @@ button {
 
     /* PORTFOLIO */
     .portfolio__works_item {
-        max-width: 100%;
-        margin: 60px auto 0;
+        width: calc(100% - 72px);
     }
 
     /* SERVICES */
@@ -830,6 +826,8 @@ button {
         margin-bottom: 20px;
     }
 }
+
+
 
 @media (max-width: 380px) {
     .portfolio__nav_item {
