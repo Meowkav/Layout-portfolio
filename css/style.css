@@ -737,9 +737,24 @@ button {
 @media (max-width: 920px) {
 
     /* HEADER */
+    .header__logo {
+        transform: scale(80%);
+    }
+
+    .burger__line,
+    .burger__line::after,
+    .burger__line::before {
+        width: 40px;
+        height: 3px;
+    }
+
     .header__menu {
         display: none;
-        top: -100px;
+    }
+
+    .header__nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 
     .header__menu.active {
@@ -748,7 +763,7 @@ button {
 
         position: absolute;
         z-index: 9999;
-        top: 69px;
+        top: 59px;
         right: -50%;
         transform: translateX(-50%);
 
