@@ -257,7 +257,7 @@ button {
     margin-top: 50px;
     padding: 24px 82px;
 
-    transition: border-bottom 0.1s ease, margin-top 0.1s ease, background 0.2s ease;
+    transition: border-bottom .1s, margin-top .05s ease, background 0.2s ease;
 }
 
 .header__btn:hover {
@@ -442,9 +442,16 @@ button {
     margin-right: 10px;
 }
 
+.portfolio__works {
+    position: relative;
+    left: -50%;
+    transform: translateX(51.5%);
+
+    display: flex;
+}
 
 .portfolio__works_item {
-    display: inline-block;
+    display: none;
     width: calc(48% - 72px);
     flex-wrap: wrap;
 
@@ -453,6 +460,10 @@ button {
     margin-left: 36px;
 
     transition: 0.3s all;
+}
+
+.filter__item {
+    display: inline-block;
 }
 
 .portfolio__img {
@@ -466,6 +477,37 @@ button {
     font-size: 18px;
 
     margin-bottom: 0;
+}
+
+.portfolio__btn {
+    position: relative;
+    right: -50%;
+    transform: translateX(-50%);
+
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+
+    background: #16daaf;
+
+    border: none;
+    border-bottom: 5px solid #15caa3;
+    border-radius: 5px;
+
+    margin: 70px auto 0;
+    padding: 24px 55px;
+
+    transition: border 0.2s, margin 0.2s, background 0.2s;
+}
+
+.portfolio__btn:hover {
+    background: #15caa3;
+    border-bottom: 3px solid #16bd98;
+    margin-top: 72px;
+}
+
+.portfolio__btn.hide {
+    display: none;
 }
 
 /* REVIEWS */
@@ -590,7 +632,7 @@ button {
     margin: 70px auto 0;
     padding: 24px 55px;
 
-    transition: border 0.2s, margin 0.2s, background 0.2s;
+    transition: border, margin, background .2s;
 }
 
 .form__btn:hover {
